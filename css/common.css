@@ -1,0 +1,82 @@
+/* #region normalize styles */
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+/* #endregion */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2e2f42;
+  background-color: #fff;
+  /* margin: 0; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+} */
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
