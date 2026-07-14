@@ -1,0 +1,143 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 72px 16px 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.menu-btn-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  cursor: pointer;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border-color;
+}
+
+.menu-btn-close:hover,
+.menu-btn-close:focus {
+  background-color: #404bbf;
+  border-color: #404bbf;
+}
+
+.menu-btn-close:hover,
+.menu-btn-close:focus {
+  background-color: #404bbf;
+  border-color: #404bbf;
+}
+
+.menu-svg-close {
+  color: #2e2f42;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-btn-close:hover .menu-svg-close,
+.menu-btn-close:focus .menu-svg-close {
+  color: #fff;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 151px;
+}
+
+.menu-list-item {
+}
+
+.menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+
+.menu-bottom {
+}
+
+.menu-contacts {
+  width: 193px;
+  margin-bottom: 48px;
+}
+
+.menu-contacts-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.menu-contacts-item {
+}
+
+.menu-contacts-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-contacts-link:hover,
+.menu-contacts-link:focus {
+  color: #4d5ae5;
+}
+
+.menu-social-list {
+  display: flex;
+  column-gap: 40px;
+}
+
+.menu-social-item {
+}
+
+.menu-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-social-link:hover,
+.menu-social-link:focus {
+  background-color: #404bbf;
+}
+
+.menu-icon {
+  color: #f4f4fd;
+}
