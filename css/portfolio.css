@@ -14,7 +14,7 @@
 }
 
 .portfolio-list-item {
-  width: calc((100% - 48px) / 3);
+  max-width: calc((100% - 48px) / 3);
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
