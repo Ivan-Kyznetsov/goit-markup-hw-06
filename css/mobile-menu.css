@@ -72,9 +72,6 @@
   width: 151px;
 }
 
-.menu-list-item {
-}
-
 .menu-link {
   font-weight: 700;
   font-size: 36px;
@@ -87,9 +84,6 @@
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
-}
-
-.menu-bottom {
 }
 
 .menu-contacts {
@@ -117,22 +111,9 @@
   color: #4d5ae5;
 }
 
-/* .menu-contacts-link:hover,
-.menu-contacts-link:focus {
-  color: #4d5ae5;
-}
-
-.menu-contacts-link.menu-contacts-tel:hover,
-.menu-contacts-link.menu-contacts-tel:focus {
-  color: #434455;
-} */
-
 .menu-social-list {
   display: flex;
   column-gap: 40px;
-}
-
-.menu-social-item {
 }
 
 .menu-social-link {
