@@ -13,7 +13,10 @@
 
 .team-list {
   display: flex;
-  column-gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 72px;
 }
 
 .team-list-item {
@@ -68,4 +71,20 @@
 .social-link:hover,
 .social-link:focus {
   background-color: #404bbf;
+}
+
+@media (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
 }

@@ -4,6 +4,8 @@
 
 .header-wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
@@ -13,7 +15,7 @@
   line-height: 1.33333;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 24px 0;
+  padding: 16px 0;
 }
 
 .header-logo span {
@@ -21,9 +23,8 @@
 }
 
 .header-nav-list {
-  display: flex;
+  display: none;
   column-gap: 40px;
-  margin: 0 340px 0 76px;
 }
 
 .header-nav-link {
@@ -59,10 +60,10 @@
 
 .header-contacts-list {
   display: flex;
-  column-gap: 40px;
 }
 
 .header-contacts {
+  display: none;
   font-style: normal;
 }
 
@@ -73,10 +74,53 @@
   letter-spacing: 0.02em;
   line-height: 1.5;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px 0;
 }
 
 .header-contacts-list a:hover,
 .header-contacts-list a:focus {
   color: #404bbf;
+}
+
+.header-btn-burger {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header-burger-svg {
+  color: #2e2f42;
+}
+
+@media (min-width: 768px) {
+  .header-wrapper {
+    justify-content: start;
+  }
+  .header-nav-list {
+    display: flex;
+    margin-left: 120px;
+  }
+  .header-contacts {
+    display: block;
+    margin-left: auto;
+  }
+  .header-contacts-list {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+  .header-btn-burger {
+    display: none;
+  }
+}
+
+@media (min-width: 1158px) {
+  .header-contacts-list {
+    flex-direction: row;
+    column-gap: 40px;
+  }
 }

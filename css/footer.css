@@ -5,10 +5,18 @@
 
 .footer-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 72px;
 }
 
 .footer-info {
-  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 288px;
 }
 
 .footer-logo {
@@ -35,7 +43,10 @@
 }
 
 .footer-social {
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social-descr {
@@ -58,6 +69,9 @@
 
 .form-fieldset {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   margin: 0;
   padding: 0;
@@ -71,6 +85,7 @@
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .form-input {
@@ -126,4 +141,42 @@
 .form-btn:focus {
   background-color: #31d0aa;
   border-color: #4d5ae5;
+}
+
+@media (min-width: 768px) {
+  .footer-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 0 108px;
+    gap: 72px 24px;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 264px;
+  }
+  .form-fieldset {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .form-descr {
+    text-align: start;
+  }
+}
+
+@media (min-width: 1158px) {
+  .footer-wrapper {
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 0 16px;
+  }
+  .footer-info {
+    margin-right: 120px;
+  }
+  .wrapper-form {
+    margin-left: auto;
+  }
 }

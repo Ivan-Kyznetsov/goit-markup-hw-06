@@ -27,6 +27,7 @@
   flex-direction: column;
   max-width: 408px;
   padding: 72px 24px 24px 24px;
+  margin: 8px 16px;
   border-radius: 4px;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),

@@ -9,12 +9,15 @@
 
 .portfolio-list {
   display: flex;
-  gap: 48px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 48px;
   flex-wrap: wrap;
 }
 
 .portfolio-list-item {
-  max-width: calc((100% - 48px) / 3);
+  max-width: 360px;
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -76,4 +79,24 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+@media (min-width: 768px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 1158px) {
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
 }
