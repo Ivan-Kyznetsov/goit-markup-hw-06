@@ -51,6 +51,15 @@
 }
 
 @media (min-width: 1158px) {
+  .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .features-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,5 +70,8 @@
   }
   .features-wrapper-icon {
     display: flex;
+  }
+  .features-list-description {
+    font-weight: 400;
   }
 }

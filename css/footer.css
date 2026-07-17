@@ -1,6 +1,6 @@
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .footer-wrapper {
@@ -72,7 +72,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   margin: 0;
   padding: 0;
   border: none;
@@ -89,7 +89,7 @@
 }
 
 .form-input {
-  width: 264px;
+  width: 100%;
   background-color: transparent;
   padding: 13px 16px;
   border: 1px solid #fff;
@@ -158,9 +158,15 @@
     align-items: flex-start;
     width: 264px;
   }
+  .footer-social {
+    align-items: flex-start;
+  }
   .form-fieldset {
     flex-direction: row;
     gap: 24px;
+  }
+  .form-input {
+    width: 264px;
   }
   .form-descr {
     text-align: start;
@@ -168,6 +174,9 @@
 }
 
 @media (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
   .footer-wrapper {
     flex-wrap: nowrap;
     gap: 0;

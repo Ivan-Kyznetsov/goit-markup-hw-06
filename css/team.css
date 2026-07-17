@@ -77,11 +77,16 @@
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 64px 24px;
   }
 }
 
 @media (min-width: 1158px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .team-list {
     flex-direction: row;
     flex-wrap: nowrap;
