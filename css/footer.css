@@ -180,7 +180,7 @@
   .footer-wrapper {
     flex-wrap: nowrap;
     gap: 0;
-    padding: 0 16px;
+    padding: 0;
   }
   .footer-info {
     margin-right: 120px;
